@@ -5,6 +5,7 @@ Instructions for Ubuntu users:
 ```
 conda create --name pro2021 python=3.8
 conda activate pro2021
+pip install numpy==1.20
 pip install git+https://github.com/petrikvladimir/pyphysx.git@master
 pip install jupyter notebook
 ```
