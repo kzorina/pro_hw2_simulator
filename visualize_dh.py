@@ -3,7 +3,10 @@ from utils import *
 import json
 
 dh_dict = json.load(open("hw02.json", 'rb'))
-
+dh_dict['theta0 offset'] = 0
+dh_dict['d0'] = 0
+dh_dict['alpha0'] = 0
+dh_dict['a0'] = 0
 """ Construct a scene with various objects """
 scene = Scene()
 scene.add_actor(RigidStatic.create_plane(material=Material(static_friction=0.1, dynamic_friction=0.1, restitution=0.5)))
