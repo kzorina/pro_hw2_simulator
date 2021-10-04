@@ -19,3 +19,10 @@ pip install cmake
 pip install git+https://github.com/petrikvladimir/pyphysx.git@master
 pip install jupyter notebook
 ```
+
+## Visualize DH paramters of simulation
+To visualize run
+```python visualize_dh.py ```
+
+## To change thetas
+Open jupyter notebook. Run all the cells. New window with simulator will open. Now you can change `id_theta` and move the slider.
