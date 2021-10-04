@@ -1,2 +1,21 @@
 # pro_hw2_simulator
-Simulator for hw2 for PRO course
+To run the simulator you will need to install the pyphysx library.
+
+Instructions for Ubuntu users:
+```
+conda create --name pro2021 python=3.8
+conda activate pro2021
+pip install git+https://github.com/petrikvladimir/pyphysx.git@master
+pip install jupyter notebook
+```
+
+Instructions for Windows users:
+```
+conda create --name pro2021 python=3.8
+conda activate pro2021
+pip install conan
+pip install numpy==1.20
+pip install cmake
+pip install git+https://github.com/petrikvladimir/pyphysx.git@master
+pip install jupyter notebook
+```
