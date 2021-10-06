@@ -24,10 +24,9 @@ for i in range(n_links):
 
 """ Compute transformation from DH """
 a = np.eye(4)
-links[0].set_global_pose((a[:3, 3], npq.from_rotation_matrix(a[:3, :3])))
-for i in range(n_links - 1):
+for i in range(n_links):
     a = a.dot(get_matrix_dh(dh_dict[f'theta{i} offset'], dh_dict[f'd{i}'], dh_dict[f'alpha{i}'], dh_dict[f'a{i}']))
-    links[i + 1].set_global_pose((a[:3, 3], npq.from_rotation_matrix(a[:3, :3])))
+    links[i].set_global_pose((a[:3, 3], npq.from_rotation_matrix(a[:3, :3])))
 
 """ Create a viewer and add the scene into it. """
 render = MeshcatViewer(wait_for_open=True, open_meshcat=True, show_frames=True, frame_scale=0.22)
